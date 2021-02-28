@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+
+  <h1>LAYER MAKER</h1>
+  <p>Hello Layer Maker!</p>
+
+  <form action="/result" method="post">
+    <label for="layer1">Layer1</label>
+    <input type="text" name="layer1">
+    <label for="thickness1">thickness:</label>
+    <input type="text" name="thickness1">
+    <p></p>
+    <label for="layer2">Layer2</label>
+    <input type="text" name="layer2">
+    <label for="thickness2">thickness:</label>
+    <input type="text" name="thickness2">
+    <p></p>
+    <button type="submit">OK</button>
+  </form>
+
+  <h2>{{ message }}</h2>
+  <p>RESULT :   {{ layer2 }} ({{thickness2}}) / {{ layer1 }} ({{thickness2}})</p>
+
+{% endblock %}
